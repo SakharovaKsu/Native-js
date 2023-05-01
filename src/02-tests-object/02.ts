@@ -13,7 +13,7 @@ type TechnologiesType = {
     title: string
 }
 
-type StudentType = {
+export type StudentType = {
     id: number
     name: string
     age: number
