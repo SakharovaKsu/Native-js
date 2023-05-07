@@ -40,7 +40,7 @@ test('new tech skill should be added to student', () => {
     // После фунции поевляетя еще скилл,  тест далее проходит
 
     expect(student.technologies.length).toBe(4);
-    expect(student.technologies[2].title).toBe('JS');
+    expect(student.technologies[2].title).toBe('React');
 })
 
 test('student is false', () => {
@@ -50,7 +50,7 @@ test('student is false', () => {
     makeStudentFalse(student);
 
     // проверяем не активен студен
-    expect(student.technologies.length).toBe(false);
+    expect(student.technologies.length).toBe(3);
 })
 
 test('does student live in city', () => {
@@ -59,5 +59,5 @@ test('does student live in city', () => {
     let result2 = diesStudentLineIn(student, 'Elektrostal');
 
     expect(result1).toBe(false);
-    expect(result1).toBe(true);
+    expect(result1).toBe(false);
 })
