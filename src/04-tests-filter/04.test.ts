@@ -24,3 +24,6 @@ test('should take curses 160', () => {
     expect(oldAges[0].name).toBe('CSS');
     expect(oldAges[1].name).toBe('React');
 })
+
+// testточкаtodo означает что тест не дописан
+// skip что б тест не запускался
