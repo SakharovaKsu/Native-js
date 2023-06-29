@@ -1,7 +1,5 @@
 import {getBanknoteList, getSum, getTriangleType, isEvenIndexSumGreater, getSquarePositiveIntegers, sum, sumFirstNumbers} from "./TasksForTests";
 
-
-
 test("sum", () => {
     expect(sum(3, 5, 7, 6, 4, 9)).toBe(34)
     expect(sum(1, 1, 1, 6)).toBe(9)
@@ -21,12 +19,14 @@ test("get Sum ", ()=> {
     expect(getSum(1234)).toBe(10)
     expect(getSum(9999)).toBe(36)
 })
+
 test("is Even Sum Greater", ()=> {
     expect(isEvenIndexSumGreater([1, 100, 2, 200])).toBe(false)
     expect(isEvenIndexSumGreater([100, 1, 200, 2])).toBe(true)
     expect(isEvenIndexSumGreater([100, 1, 200, 2, 300, 4])).toBe(true)
     expect(isEvenIndexSumGreater([100, 1, 200, 2, 4])).toBe(true)
 })
+
 test("get Square Only Of Positive Integers", () => {
     const array = [4, 5.6, -9.8, 3.14, 10, 6, 8.34, -2]
     const len = array.length
@@ -38,13 +38,15 @@ test("get Square Only Of Positive Integers", () => {
     expect(result[1]).toBe(100)
     expect(result[2]).toBe(36)
 })
+
 test("sum of first N numbers", () => {
     expect(sumFirstNumbers(0)).toBe(0)
     expect(sumFirstNumbers(4)).toBe(10)
     expect(sumFirstNumbers(10)).toBe(55)
 })
+
 test("get banknote list", ()=> {
-    // надо бы проверять длинну резалтов и их сумму
+    // надо бы проверять длину резалтов и их сумму
     const result2500 = getBanknoteList(2500)
     const result23 = getBanknoteList(23)
     expect(result2500[0]).toBe(1000)
